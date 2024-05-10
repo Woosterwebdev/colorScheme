@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Color Scheme Picker</title>
+  </head>
+  <body class="m-0">
+    <form id="color-form" class="m-0">
+      <input
+        type="color"
+        id="seed-color"
+        class="seed-color"
+        name="seed-color"
+        value="#000000"
+      />
+      <select name="scheme-select" id="scheme-select">
+        <!-- Rendered options from JS -->
+      </select>
+      <button id="btn" class="btn">Get color scheme</button>
+    </form>
+    <div id="color-results">
+      <div id="color-preview" class="colors preview"></div>
+      <!-- Rendered color pallets here -->
+      <div id="color-codes" class="colors footer"></div>
+      <!-- Rendered Hex codes here -->
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- https://www.figma.com/file/ztfBnOQMtjyvfXVE8SRPl1/Color-Scheme-Generator-(Copy)?type=design&node-id=2-1155&mode=design&t=lmVYrZPlOmhLCP7d-0 -->
